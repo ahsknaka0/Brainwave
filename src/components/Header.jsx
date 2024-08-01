@@ -22,6 +22,9 @@ const Header = () => {
       }
     };
     const handleClick = () => {
+      if(!openNavigation) return;
+
+      enablePageScroll();
       setOpenNavigation(false);
     };
 
